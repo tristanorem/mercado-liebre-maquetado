@@ -1,0 +1,93 @@
+@media(min-width: 361px ){
+    .description{
+        display:block;
+        width: 45%;
+    }
+    .products article{
+        width: 45%;
+        transition: box-shadow 2s;
+        
+    }
+    .pie-pagina{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    
+    main section div.products{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        align-items:flex-start;
+        
+    }
+    main section article:hover .description{
+        width: 45%;
+        opacity: 1;
+        
+    }
+
+    main section article:hover {
+        
+        box-shadow: 0px 0px 25px rgb(0, 0, 0);
+    }
+
+}
+@media (min-width:769px) {
+    header nav{
+        display: block;
+        width: 22%;        
+    }
+    .header-top-bar {
+    display: flex;
+    justify-content: space-between;
+
+    }
+    .products article{
+        width: 22%;
+    }
+    .main-navbar{
+        display: flex;
+        
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin:  0 10px;
+        font-size: 16px;
+        margin-top: 50px;
+    }
+    main section div.products article{
+        width: 22%;
+    }
+
+    
+    .pie-pagina{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    
+    .pie-pagina,article i{
+        margin: 10px;
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    section.de-copy{
+        justify-content: center;
+    }
+    div.burger-menu i{
+        display: none;
+    }
+    
+    
+   
+    
+}

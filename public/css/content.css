@@ -1,0 +1,141 @@
+/*contenido de los articulos*/
+article div.main-article{
+    padding: 5px;
+    width: 100%;
+    position: relative;
+    border-top: solid 1px #ebebeb; 
+}
+/*caja-precio*/
+.caja-precio{
+    display: flex;
+}
+.caja-precio .precio{
+    width: 40%;
+}
+.caja-precio .discont{
+    width: 60%;
+    
+}
+/*precio*/
+.price{
+    font-size:16px ;
+}
+
+/*descuento y la descripcion*/    
+.discount,
+.description{
+    font-size: 16px;
+    font-family: "roboto";
+   
+}   
+
+h3,
+.description{
+    color:#666;
+}
+/*seccion del banner*/
+section.banner img{
+    width: 100%;
+    
+}
+
+/*el contenido principal*/
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+/*esto es cada producto del contenido principal*/
+.produc article{
+   
+    width: 45%;
+}
+main section article{
+    background-color: #fff; 
+    margin:10px 10px;
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+    
+    
+}
+
+/*esto es el descuento*/
+main.discont{
+    color:#39b54a;
+
+}
+/*esto es la imag*/
+ main section article img{
+    width: 100%;
+    padding:10px;
+      
+ }
+/*seccion del articulo-descuento*/
+ 
+main section article i,
+ .discont{
+     color:#39b54a; 
+ }
+ /*el camioncito*/
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 25px;
+    top: -20px;
+}
+/*que de vuelta el camion*/
+main section article i:hover{
+    transform:rotate(360deg);
+     transition:0.5s ease-in-out ;
+        
+}
+ /*titulos h3 */
+ main section h3{
+    margin: 20px 0px;
+    }
+ /*la descripcion*/
+.description{
+    opacity: 0;
+    transition: all 2s;
+    margin-top: 20px;
+}
+
+/*aca empieza el footer*/
+footer{
+    width: 100%;
+    background-color:#fff;
+}
+
+.pie-pagina{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    flex-wrap: nowrap;
+}
+.pie-pagina i{
+    font-size: 2em;
+    color: #0044AA;
+}
+.pie-pagina i:hover{
+    transition:all 0.5s ;
+    color: rgb(164, 246, 10);
+}
+
+h2{
+    color:#666;
+    font-size: 20px;
+    font-family:"roboto";
+    padding: 10px;
+}
+.copy{
+    color:#666;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+section.de-copy{
+   margin-top: 50px;
+}
