@@ -1,0 +1,443 @@
+/* estilos*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+/*afecta en general*/
+* {
+    font-family:"roboto";
+    max-width: 100%;
+    box-sizing: border-box;
+    
+}
+
+
+
+h3{
+    font-size: 24px;
+}
+p{
+    font-size: 15px;
+}
+header{
+    background-color:#EAC926;
+    
+}header a {
+    width: 50%;
+}
+/*logo*/
+.top-header .logo{
+    width: 50%;
+    margin-top: 20px;
+    
+}
+.top-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+}
+.search-bar {
+    top: 15px;
+    width: 50%;
+    display:flex;
+    justify-content:last baseline;
+    align-items:center;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 2px 15px ;
+}
+
+/*esto es la img*/
+main section article img{
+    width: 100%;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.search {
+    width: 100%;
+    background-color: white;
+    
+}
+.form-search input {
+    border: none;
+    outline: none;
+    
+}
+
+.search-bar i {
+    align-self: center;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 8px;
+    border: 0px;
+}
+header form input {
+    border: 0px;
+    
+}
+
+/*la barra del menu completo*/
+header nav{
+    font-size: 12px;
+    display:none;
+  
+}
+header .mano-titulo{
+    margin-top: 10px ;
+    padding: 20px;
+    margin-right: 15px;
+}
+
+/*la barra de los ul*/
+.main-navbar {
+    list-style-type:none;
+    width: 100%;
+    text-decoration: none;
+   
+}
+.right-navbar{
+    list-style-type:none;
+    padding: 10px;
+    
+     
+}
+.left-navbar{
+    list-style-type:none;
+    padding: 10px;
+    
+
+}
+/*el contenido de la barra ul*/
+a {
+    text-decoration: none;
+    color:#000000;
+}
+/*el menu de 3 barritas*/
+div.burger-menu{
+    text-align: center;
+}/*menu de 3 barritas*/
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color:#FFF;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+}
+
+
+/*slider*/
+ img{
+    max-width: 100%;
+}
+.banner-all{
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    max-width: 2000px;
+    width: 100%;
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    transform: translate3d(0,0,0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.item-slider{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+.pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.pagination-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ffff;
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    background:rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+.pagination-item:hover {
+    transform:scale(2) ;
+}
+.pagination-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform:scale(1);
+    opacity:0 ;
+    transition:all 300ms;
+}
+.pagination-item:hover img{
+    opacity: 1;
+    transform:scale(1);
+}
+/*transision de animacion*/
+input[id="1"]:checked ~ .slider{
+    animation: none;
+    transform:translate3d(calc(-100% * 1), 0, 0) ;
+}
+input[id="1"]:checked ~ .pagination .pagination-item [for="1"]{
+    background: #fff;
+}
+input[id="2"]:checked ~ .slider{
+    animation: none;
+    transform:translate3d(calc(-100% * 2), 0, 0) ;
+}
+input[id="2"]:checked ~ .pagination .pagination-item [for="2"]{
+    background: #fff;
+}
+input[id="3"]:checked ~ .slider{
+    animation: none;
+    transform:translate3d(calc(-100% *3), 0, 0) ;
+}
+input[id="3"]:checked ~ .pagination .pagination-item [for="3"]{
+    background: #fff;
+}
+input[id="4"]:checked ~ .slider{
+    animation: none;
+    transform:translate3d(calc(-100% *0), 0, 0) ;
+}
+input[id="4"]:checked ~ .pagination .pagination-item [for="4"]{
+    background: #fff;
+}
+
+@keyframes autoplay {
+    25%{
+        transform:translate3d(calc(-100% *0),0 ,0);
+    }
+    50%{
+        transform:translate3d(calc(-100% *1),0 ,0);
+    }
+    75%{
+        transform:translate3d(calc(-100% *2),0 ,0);
+    }
+    100%{
+        transform:translate3d(calc(-100% *3),0 ,0);
+    }
+   
+}
+/*linea divisora*/
+ .lines-effect{
+     font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight:lighter;
+    color: #5b62cc;
+}
+.lines-effect2{
+    font-size: 25px;
+   text-align: center;
+   margin-top: 50px;
+   font-weight:lighter;
+   color: #5b62cc;
+}
+.productos{
+    position: relative;
+}
+
+main section article img{
+    width: 100%;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.productos{
+display: inline-flex;
+justify-content: center;  
+ }
+ .productos article{
+    width: 25%;
+}
+
+/*contenido de los articulos*/
+
+/*contenido de los articulos*/
+article div.main-article{
+    padding: 5px;
+    width: 100%;
+    position: relative;
+    border-top: solid 1px #ebebeb; 
+}
+/*caja-precio*/
+.caja-precio{
+    display: flex;
+    
+}
+.caja-precio .precio{
+    width: 40%;
+   
+}
+.caja-precio .discont{
+    width: 60%;
+    
+    
+}
+/*precio*/
+.price{
+    font-size:16px ;
+}
+
+.main-article .description{
+    text-align: center;
+}
+/*descuento y la descripcion*/    
+.discount,
+.description{
+    font-size: 16px;
+    font-family: "roboto";
+   
+}   
+
+h3,
+.description{
+    color:#666;
+}
+
+
+/*el contenido principal*/
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+/*esto es cada producto del contenido principal*/
+.produc article{
+   
+    width: 45%;
+}
+main section article{
+    background-color: #fff; 
+    margin:10px 10px;
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+    
+    
+}
+
+/*esto es el descuento*/
+main.discont{
+    color:#39b54a;
+
+}
+/*esto es la imag*/
+ main section article img{
+    width: 100%;
+    padding:10px;
+      
+ }
+/*seccion del articulo-descuento*/
+ 
+main section article i,
+ .discont{
+     color:#39b54a; 
+ }
+ /*el camioncito*/
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 25px;
+    top: -20px;
+}
+/*seccion del corazon*/
+/*el camioncito*/
+.agreagar-favoritos  {
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    color: #771111;
+    border: 1px solid #e20202;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 25px;
+    top: -20px;
+}
+/*que de vuelta el camion*/
+main section article i:hover{
+    transform:rotate(360deg);
+     transition:0.5s ease-in-out ;
+        
+}
+ /*titulos h3 */
+ main section h3{
+    margin: 20px 0px;
+    }
+ /*la descripcion*/
+.description{
+    opacity: 0;
+    transition: all 2s;
+    margin-top: 20px;
+}
+
+/*aca empieza el footer*/
+.footer{
+    width: 100%;
+    background-color:#D6DBDF ;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    flex-wrap: nowrap;
+}
+.sub-titulo i{
+    font-size: 2em;
+    color: #0044AA;
+}
+.sub-titulo i:hover{
+    transition:all 0.5s ;
+    color: #28B463  ;
+}
+
+h2{
+    color:#666;
+    font-size: 20px;
+    font-family:"roboto";
+    padding: 10px;
+}
+.copy{
+    color:#666;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color:#D6DBDF ;
+}
+
+/*
+section.de-copy{
+   margin-top: 50px;
+}*/

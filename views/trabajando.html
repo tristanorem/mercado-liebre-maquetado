@@ -6,9 +6,10 @@
         <title>Bienvenidos a MercadoLiebre</title>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="/css/style.css">
-        <script src="/js/index.js" ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
     </head>
- 
 <body>
     <header >
         <div class="top-header">
@@ -37,44 +38,21 @@
         <ul class="right-navbar">
             <li><a href="/register">Crea tu Cuenta <i class="far fa-address-card"></i></i></a></li>
             <li><a href="/login">Ingresa <i class="fas fa-sign-out-alt"></i></a></li>
-            <li><a href="/trabajando">Mis Compras<i class="fas fa-shopping-basket"></i></a></li>
+            <li><a href="#">Mis Compras<i class="fas fa-shopping-basket"></i></a></li>
+
         </ul>
     </nav> 
     <div class="burger-menu">
         <i class="fa fa-bars burger"></i>
     </div>   
 </header>
-<main>
+<main class="no-funciona">
 
-    <form  class="login" id="login" action="" method="POST">
-
-        
-        <div class="form-control">
-
-            <label for="nombre">Nombre</label>
-            <input type="text" name="name"  id="nombre" placeholder="Nombre ">
-            <span  style="color:#b60b0b" id="name" ></span>
-
-        </div>
-
-        <div class="form-control">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email" >
-            <span  style="color:#b60b0b" id="correo" ></span>
-        </div>
-
-        <div class="form-control position">
-            <label for="">Contraseña</label>
-            <input type="password" name="password"  id="password" placeholder="Contraseña">
-            <span class="fas fa-eye-slash"  id="ojo" ></span>
-            <span  style="color:#b60b0b" id="contraseña" ></span>
-        </div>
-        
-            <a href="#"><button type="submit" class="enviado">Enviar</button></a>
-        
-    </form>
+    <div class="mensaje" >
+        <h2>Uy.. !Que mal, Encontraste la pag 404 , Esta página todavia esta en construcción! vení <a href="/">Acá</a> </h2>
+        <img src="/images/not-found/error-404.jpg" alt="">
+    </div>
 </main>
-    
 <footer>
     <div class="footer">
         <article class="pie-de-pagina">
@@ -120,6 +98,5 @@
     
     
 </footer>
-<script src="/js/loginValidations.js" ></script>
 </body>
 </html>

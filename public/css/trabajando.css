@@ -1,0 +1,31 @@
+
+
+.mensaje h2 {
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color: #CB4335 ;
+}
+.mensaje a{
+        font-size: 25px;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        color: #A569BD   ;
+    
+    
+}
+
+.mensaje img{
+    width: 70%;
+    padding:10px;
+    
+    
+    
+}
+ .no-funciona{
+    display: flex;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}

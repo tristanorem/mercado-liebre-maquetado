@@ -12,6 +12,9 @@ app.get('/', (req,res)=>{
 app.get('/register', (req,res)=>{
     res.sendFile(__dirname + '/views/register.html');
 });
+app.get('/trabajando', (req,res)=>{
+    res.sendFile(__dirname + '/views/trabajando.html');
+});
 app.post('/register', (req,res)=> {
     res.send('Ya te registraste campeón');
 });
