@@ -1,0 +1,38 @@
+[
+    {
+      "precio": 6700,
+      "id": 1,
+      "title": "Cafetera",
+      "thumbnailUrl": "/images/img-cafetera-moulinex.jpg"
+    },
+    {
+      "precio": 230000,
+      "id": 2,
+      "title": "macbook pro",
+      "thumbnailUrl": "/images/img-macbook-pro-2019.jpg"
+    },
+    {
+      "precio": 100000,
+      "id": 3,
+      "title": "samsung galaxy s10",
+      "thumbnailUrl": "/images/img-samsung-galaxy-s10.jpg"
+    },
+    {
+      "precio": 70500,
+      "id": 4,
+      "title": "tv samsung-smart",
+      "thumbnailUrl": "/images/img-tv-samsung-smart.jpg"
+    },
+    {
+      "precio": 80500,
+      "id": 5,
+      "title": "Heladera",
+      "thumbnailUrl": "/images/img-heladera-whirpool.jpg"
+    },
+    {
+      "precio": 60700,
+      "id": 6,
+      "title": "laptop lenovo",
+      "thumbnailUrl": "/images/img-laptop-lenovo.jpg"
+    }
+  ]

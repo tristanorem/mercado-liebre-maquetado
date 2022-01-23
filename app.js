@@ -15,6 +15,12 @@ app.get('/register', (req,res)=>{
 app.get('/trabajando', (req,res)=>{
     res.sendFile(__dirname + '/views/trabajando.html');
 });
+app.get('/ofertas', (req,res)=>{
+    res.sendFile(__dirname + '/views/ofertas.html');
+});
+app.get('/card', (req,res)=>{
+    res.sendFile(__dirname + '/views/card.html');
+});
 app.post('/register', (req,res)=> {
     res.send('Ya te registraste campeón');
 });
