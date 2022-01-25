@@ -21,13 +21,14 @@ p{
 header{
     background-color:#EAC926;
     
-}header a {
-    width: 50%;
+    
 }
+
 /*logo*/
 .top-header .logo{
-    width: 50%;
-    margin-top: 20px;
+    width: 63%;
+    margin-top: 14px;
+    
     
 }
 .top-header {
@@ -35,7 +36,7 @@ header{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 8px;
+    
 }
 .search-bar {
     top: 15px;
@@ -291,6 +292,8 @@ article div.main-article{
 /*caja-precio*/
 .caja-precio{
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     
 }
 .caja-precio .precio{
