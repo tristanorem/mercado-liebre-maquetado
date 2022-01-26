@@ -1,5 +1,4 @@
 /* estilos*/
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
 
 /*slider*/
@@ -41,9 +40,11 @@
 
 h3{
     font-size: 24px;
+    font-family: roboto;
 }
 p{
     font-size: 15px;
+    font-family: sans-serif;
 }
 header{
     background-color:#EAC926;
@@ -112,6 +113,7 @@ header form input {
 header nav{
     font-size: 12px;
     display:none;
+    font-family: roboto;
   
 }
 header .mano-titulo{
