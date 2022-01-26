@@ -2,14 +2,41 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
 
-/*afecta en general*/
-* {
-    font-family:"roboto";
-    max-width: 100%;
-    box-sizing: border-box;
-    
+/*slider*/
+.banner-all{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
 }
 
+.slider{
+    
+    display: flex;
+    transform: translate3d(0,0,0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.item-slider{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+@keyframes autoplay {
+    
+    50%{
+        transform:translate3d(calc(-100% *0),0 ,0);
+    }
+    100%{
+        transform:translate3d(calc(-100% *1),0 ,0);
+    }
+}
 
 
 h3{
@@ -132,120 +159,7 @@ div.burger-menu i{
 
 
 /*slider*/
- img{
-    max-width: 100%;
-}
-.banner-all{
-    
-    display: flex;
-    position: relative;
-    max-width: 2000px;
-    width: 100%;
-    overflow: hidden;
-}
-.slider{
-    display: flex;
-    transform: translate3d(0,0,0);
-    transition: all 600ms;
-    animation-name: autoplay;
-    animation-duration: 20s;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-}
-.item-slider{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    flex-grow: 0;
-    max-width: 100%;
-}
-.pagination{
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-.pagination-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid #ffff;
-    width: 35px;
-    height: 35px;
-    border-radius: 6px;
-    overflow: hidden;
-    cursor: pointer;
-    background:rgba(255, 255, 255, 0.5);
-    margin: 0 10px;
-    text-align: center;
-    transition: all 300ms;
-}
-.pagination-item:hover {
-    transform:scale(2) ;
-}
-.pagination-item img{
-    display: inline-block;
-    max-width: none;
-    height: 100%;
-    transform:scale(1);
-    opacity:0 ;
-    transition:all 300ms;
-}
-.pagination-item:hover img{
-    opacity: 1;
-    transform:scale(1);
-}
-/*transision de animacion*/
-input[id="1"]:checked ~ .slider{
-    animation: none;
-    transform:translate3d(calc(-100% * 1), 0, 0) ;
-}
-input[id="1"]:checked ~ .pagination .pagination-item [for="1"]{
-    background: #fff;
-}
-input[id="2"]:checked ~ .slider{
-    animation: none;
-    transform:translate3d(calc(-100% * 2), 0, 0) ;
-}
-input[id="2"]:checked ~ .pagination .pagination-item [for="2"]{
-    background: #fff;
-}
-input[id="3"]:checked ~ .slider{
-    animation: none;
-    transform:translate3d(calc(-100% *3), 0, 0) ;
-}
-input[id="3"]:checked ~ .pagination .pagination-item [for="3"]{
-    background: #fff;
-}
-input[id="4"]:checked ~ .slider{
-    animation: none;
-    transform:translate3d(calc(-100% *0), 0, 0) ;
-}
-input[id="4"]:checked ~ .pagination .pagination-item [for="4"]{
-    background: #fff;
-}
 
-@keyframes autoplay {
-    25%{
-        transform:translate3d(calc(-100% *0),0 ,0);
-    }
-    50%{
-        transform:translate3d(calc(-100% *1),0 ,0);
-    }
-    75%{
-        transform:translate3d(calc(-100% *2),0 ,0);
-    }
-    100%{
-        transform:translate3d(calc(-100% *3),0 ,0);
-    }
-   
-}
 /*linea divisora*/
  .lines-effect{
      font-size: 25px;
@@ -373,6 +287,7 @@ main section article i{
     position: absolute;
     right: 25px;
     top: -20px;
+    transition:300ms;
 }
 /*seccion del corazon*/
 /*el camioncito*/
